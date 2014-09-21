@@ -1,9 +1,12 @@
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
 /**
  * Created by lddaniild on 18.09.14.
  */
 public class ContactsServiceImpl implements ContactsService {
+
 
     private int maxSize;
 

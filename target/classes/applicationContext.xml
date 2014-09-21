@@ -22,7 +22,7 @@
     </bean>
 
     <bean class="ContactsDAOImpl" id="ContactsDAOImpl1">
-        <property name="maxSize" value="${maxSize}"/>
+       <property name="maxSize" value="${maxSize}"/>
         <property name="listOfContacts">
             <list value-type="Contact">
                 <ref bean="contextContact1"/>

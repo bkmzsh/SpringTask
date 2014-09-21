@@ -1,3 +1,5 @@
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,6 +7,7 @@ import java.util.List;
  * Created by lddaniild on 18.09.14.
  */
 public class ContactsDAOImpl implements ContactsDAO {
+
 
     private int maxSize;
 
@@ -15,6 +18,8 @@ public class ContactsDAOImpl implements ContactsDAO {
     public int getMaxSize(){
         return maxSize;
     }
+
+
 
     private List<Contact> listOfContacts; //= new ArrayList<Contact>();
 
@@ -28,9 +33,13 @@ public class ContactsDAOImpl implements ContactsDAO {
         this.listOfContacts.remove(contact);
     }
 
+
+
     public List<Contact> getListOfContacts(){
         return listOfContacts;
     }
+
+
 
     public void setListOfContacts(List listOfContacts){
         if(listOfContacts.size()<=maxSize) {
